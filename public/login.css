@@ -1,0 +1,125 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #15202B;
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+  }
+  
+  .loginbox{
+    width: 320px;
+    height: 420px;
+    background: #000;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    border-radius: 20px;
+  }
+  
+  h1{
+    color: #0050a5;
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+    line-height: 15px;
+  }
+  
+  
+  .loginbox input, button{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .loginbox input[type="email"], input[type="password"]
+  {
+    border: 2px solid #aaa;
+    border-radius: 10px;
+    padding: 5px;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+  }
+  .loginbox input:focus {
+    border: 2px solid #0050a5;
+    transition: all 0.2s;
+  }
+  
+  .loginbox button[type="submit"]
+  {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #0050a5;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 15px;
+    margin-top: 17px;
+    transition: all 0.2s;
+  }
+  
+  .loginbox button[type="submit"]:hover
+  {
+    cursor: pointer;
+    font-size: 22px;
+    background: #0050a5b0;
+    color: #000;
+  }
+  
+  /* placeholder */
+  input:focus::-webkit-input-placeholder {
+    position:absolute;
+    top:1mm;
+    left:1mm;
+    font-size: x-small;
+    color: #0050a5;
+    transition: all 0.2s;
+  }
+  
+  /* Firefox < 19 */
+  input:focus:-moz-placeholder {
+    position:absolute;
+    top:1mm;
+    left:1mm;
+    font-size: x-small;
+    color: #0050a5;
+    transition: all 0.2s;
+  }
+  
+  /* Firefox > 19 */
+  input:focus::-moz-placeholder {
+    position:absolute;
+    top:1mm;
+    left:1mm;
+    font-size: x-small;
+    color: #0050a5;
+    transition: all 0.2s;
+  }
+  
+  /* Internet Explorer 10 */
+  input:focus:-ms-input-placeholder {
+    position:absolute;
+    top:1mm;
+    left:1mm;
+    font-size: x-small;
+    color: #0050a5;
+    transition: all 0.2s;
+  }
+  /* autocomplete  */
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover, 
+  input:-webkit-autofill:focus, 
+  input:-webkit-autofill:active{
+      -webkit-box-shadow: 0 0 0 30px #000 inset !important;
+  }
+  /*Change text in autofill textbox*/
+  input:-webkit-autofill{
+    -webkit-text-fill-color: white !important;
+  }
