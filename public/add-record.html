@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="add-record.css" />
+    <title>PCRMS - Add Record</title>
+</head>
+<body>
+    <header>
+        <h1 style="text-transform: uppercase;">Police Crime Record Management System</h1>
+        <nav>
+          <a href="home.html" class="button"><i class="fa-solid fa-house"></i> Home</a>
+        </nav>
+    </header>
+    <form>
+        <label for="criminalName">Criminal Name:</label>
+        <input type="text" id="criminalName" name="criminalName" required /><br><br>
+
+        <label for="crimeCategory">Crime Category:</label>
+        <input type="text" id="crimeCategory" name="crimeCategory" required /><br><br>
+
+        <label for="crimeDate">Crime Date:</label>
+        <input type="date" id="crimeDate" name="crimeDate" required /><br><br>
+
+        <label for="crimeTime">Crime Time:</label>
+        <input type="time" id="crimeTime" name="crimeTime" required /><br><br>
+
+        <label for="crimeLocation">Crime Location:</label>
+        <input type="text" id="crimeLocation" name="crimeLocation" required /><br><br>
+
+        <label for="criminalNationality">Criminal Nationality:</label>
+        <input type="text" id="criminalNationality" name="criminalNationality" required /><br><br>
+
+        <label for="crimeDescription">Crime Description:</label>
+        <textarea id="crimeDescription" name="crimeDescription" ></textarea><br><br>
+
+        <input type="submit" value="Add Record" />
+    </form>
+    <footer>
+        <p>&copy; 2023 PCRMS</p>
+    </footer>
+</body>
+</html>
