@@ -35,6 +35,7 @@ nav a:hover {
 }
 
 h2{
+    font-size: 2rem;
     text-align: center;
     color: #0050a5;
 }
@@ -86,7 +87,24 @@ input[type="time"]::-webkit-calendar-picker-indicator,input[type="date"]::-webki
 div {
     padding: 10px;
 }
+
+input[type="submit"] {
+    background-color: #0050a5;
+    color: #fff;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
   
+  input[type="submit"]:hover {
+    background-color: #58a9ff75;
+    font-size: smaller;
+    font-weight: bolder;
+    color: black;
+  }    
 
 footer {
     background-color: #0050a5;
