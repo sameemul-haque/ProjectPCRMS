@@ -18,28 +18,50 @@
     <br>
     <div style="align-items: flex-start;"><form>
         <h2>Add Record</h2>
-        <label for="criminalName">Criminal Name:</label>
-        <input type="text" id="criminalName" name="criminalName" required /><br><br>
 
-        <label for="crimeCategory">Crime Category:</label>
-        <input type="text" id="crimeCategory" name="crimeCategory" required /><br><br>
+        <div class="user-input-wrp">
+        <br/>
+        <input type="text" class="inputText" id="criminalName" name="criminalName" required/>
+        <span class="floating-label">Criminal Name</span>
+        </div>
 
-        <label for="crimeDate">Crime Date:</label>
-        <input type="date" id="crimeDate" name="crimeDate" required /><br><br>
+        <div class="user-input-wrp">
+        <br/>
+        <input type="text" class="inputText" id="crimeCategory" name="crimeCategory" required/>
+        <span class="floating-label">Crime Category</span>
+        </div>
+        <div class="user-input-wrp">
+        <br/>
+        <input type="date" class="inputText" id="crimeDate" name="crimeDate" required/>
+        <span class="floating-label">Crime Date</span>
+        </div>
 
-        <label for="crimeTime">Crime Time:</label>
-        <input type="time" id="crimeTime" name="crimeTime" required /><br><br>
+        <div class="user-input-wrp">
+        <br/>
+        <input type="time" class="inputText" id="crimeTime" name="crimeTime" required/>
+        <span class="floating-label">Crime Time</span>
+        </div>
+        
+        <div class="user-input-wrp">
+        <br/>
+        <input type="text" class="inputText" id="crimeLocation" name="crimeLocation" required/>
+        <span class="floating-label">Crime Location</span>
+        </div>
+     
+        <div class="user-input-wrp">
+        <br/>
+        <input type="text" class="inputText" id="criminalNationality" name="criminalNationality" required/>
+        <span class="floating-label">Criminal Nationality</span>
+        </div>
 
-        <label for="crimeLocation">Crime Location:</label>
-        <input type="text" id="crimeLocation" name="crimeLocation" required /><br><br>
-
-        <label for="criminalNationality">Criminal Nationality:</label>
-        <input type="text" id="criminalNationality" name="criminalNationality" required /><br><br>
-
-        <label for="crimeDescription">Crime Description:</label>
-        <textarea id="crimeDescription" name="crimeDescription" ></textarea><br><br>
+        <div class="user-input-wrp">
+        <br/>
+        <input type="text" class="inputText" id="crimeDescription" name="crimeDescription" required/>
+        <span class="floating-label">Crime Description</span>
+        </div>
 
         <input type="submit" value="Add Record" />
+        
     </form></div>
     <br>
     <footer>
