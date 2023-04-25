@@ -34,6 +34,17 @@ nav a:hover {
   transition: all 0.2s;
 }
 
+@media only screen and (max-width: 600px) {
+  nav a {
+    font-size: 8px;
+    border-radius: 3px;
+    padding: 2px;
+  }
+  nav a:hover {
+    font-size: 10px;
+  }
+}
+
 h2{
     font-size: 2rem;
     text-align: center;
@@ -105,12 +116,6 @@ input[type="submit"] {
     font-weight: bolder;
     color: black;
   }    
-
-@media only screen and (max-width: 600px) {
-  input[type="submit"] {
-    font-size: 6px;
-  }
-}
 
 footer {
     background-color: #0050a5;
