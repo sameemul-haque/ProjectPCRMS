@@ -9,7 +9,7 @@ header {
     padding: 20px;
 }
 
-#logout-btn{
+nav a{
     position:absolute; 
     top: 20px; 
     right: 20px;
@@ -21,7 +21,7 @@ header {
     border-radius: 10px;
     padding: 5px;
 }
-#logout-btn:hover {
+nav a{
     cursor: pointer;
     color:#1DA1F2;
     font-size: 20px;
@@ -29,12 +29,12 @@ header {
     transition: all 0.2s;
   }
   @media only screen and (max-width: 600px) {
-    #logout-btn {
+    nav a{
       font-size: 5px;
       border-radius: 3px;
       padding: 2px;
     }
-    #logout-btn:hover {
+    nav a:hover {
       font-size: 5px;
     }
   }
