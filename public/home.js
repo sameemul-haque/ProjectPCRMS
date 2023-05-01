@@ -1,10 +1,3 @@
-firebase.auth().onAuthStateChanged(function(user) {
-    if (!user) {
-      window.location.href = 'login.html';
-    }
-  });
-document.addEventListener("DOMContentLoaded", function() {
-// Get the logout button element
 const logoutBtn = document.getElementById('logout-btn');
 
 // Add event listener to the logout button
@@ -20,5 +13,4 @@ logoutBtn.addEventListener('click', () => {
         // Handle errors by displaying an error message to the user
         console.log(error.message);
     });
-});
 });
