@@ -21,11 +21,11 @@ nav a{
     border-radius: 10px;
     padding: 5px;
 }
-nav a{
+nav a:is(:hover,:focus){
     cursor: pointer;
-    color:#1DA1F2;
+    color:black;
     font-size: 20px;
-    background-color:  #1da0f270;
+    background-color:  #144e7270;
     transition: all 0.2s;
   }
   @media only screen and (max-width: 600px) {
@@ -34,7 +34,7 @@ nav a{
       border-radius: 3px;
       padding: 2px;
     }
-    nav a:hover {
+    nav a:is(:hover,:focus){
       font-size: 5px;
     }
   }
@@ -60,11 +60,11 @@ main {
     transition: all 0.2s;
 }
 
-.button:hover {
+.button:is(:hover,:focus){
     font-size: 1.2rem;
     cursor: pointer;
     color: black;
-    background-color:  #0050a575;
+    background-color:  #3a99ff50;
 }
 
 footer {
