@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Registration</title>
+    <link rel="stylesheet" type="text/css" href="login.css" />
+</head>
+<body>
+    <div class="loginbox">
+        <form>
+            <h1>User Registration</h1>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            <button type="submit" id="register-btn">Register</button><br><br>
+            Already have an account? <a href="login.html">Login Here</a>
+        </form>
+    </div>
+    <div style="display: flex;justify-content: center;">
+        <p style="font-size: x-large;   text-shadow:-2px -2px 0 #000,2px -2px 0 #000,-2px 2px 0 #000,2px 2px 0 #000; font-weight: bolder; padding:15px; display: inline;color: #15ff00; text-align: center" class="error-msg" id="message"></p>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-firestore.js"></script>
+    <script src="firebase-config.js"></script>
+    <script src="reg.js"></script>
+</body>
+</html>

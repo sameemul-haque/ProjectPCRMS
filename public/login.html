@@ -6,14 +6,16 @@
 </head>
 <body>
     <div class="loginbox">
-    <form>
-        <h1>Login</h1>
-        <input type="email" id="email" placeholder="Enter your email" required>
-        <input type="password" id="password" placeholder="Enter your password" required>
-        <p style="color: #ff0033; text-align: center" class="error-msg" id="error-msg"></p>
-        <button type="submit" id="login-btn">Login</button><br>
-        <!-- Don't have an account? <a href="create-user.html">Create User</a> -->
-    </form>
+        <form>
+            <h1>Login</h1>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            <button type="submit" id="login-btn">Login</button><br><br>
+            Don't have an account? <a href="reg.html">Create User</a>
+        </form>
+    </div>
+    <div style="display: flex;justify-content: center;">
+        <p style="font-size: x-large;   text-shadow:-2px -2px 0 #000,2px -2px 0 #000,-2px 2px 0 #000,2px 2px 0 #000; font-weight: bolder; padding:15px; display: inline;color: #ff0033; text-align: center" class="error-msg" id="error-msg"></p>
     </div>
     <!-- Firebase SDK -->
     <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
