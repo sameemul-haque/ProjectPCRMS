@@ -8,17 +8,6 @@
 
 • <a href="https://projectpcrms.web.app">projectpcrms.web.app</a>
 
-• Login Details:
-
-Email
-```
-adminpcrmsweb@gmail.com
-```
-Password
-```
-adm123
-```
-
 
 ## Languages and Tools used:
 <a href="https://html.spec.whatwg.org/multipage/">
