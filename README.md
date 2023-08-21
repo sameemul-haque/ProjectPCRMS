@@ -10,17 +10,9 @@
 
 
 ## Languages and Tools used:
-<img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg" alt="html" width="40" height="40"/> HTML
-&nbsp;
-<img src="https://www.vectorlogo.zone/logos/w3_css/w3_css-icon.svg" alt="css" width="40" height="40"/> CSS
-&nbsp;
-<img src="https://upload.vectorlogo.zone/logos/javascript/images/239ec8a4-163e-4792-83b6-3f6d96911757.svg" alt="javascript" width="40" height="40"/> JavaScript
-&nbsp;
-<img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="40" height="40"/> Firebase
-&nbsp;
-<img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" height="40"/> Git
-&nbsp;
-<img src="https://www.vectorlogo.zone/logos/github/github-tile.svg" alt="github" height="40"/> Github
-&nbsp;
-
+[![JavaScript](https://img.shields.io/badge/JAVASCRIPT-F7DF1E?style=for-the-badge&logo=javascript&logoColor=333333 "JavaScript")](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=ffffff "HTML")](https://html.spec.whatwg.org/multipage/)
+[![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=ffffff "CSS")](https://www.w3.org/TR/CSS/#css)
+[![Firebase](https://img.shields.io/badge/FIREBASE-FFCA28?style=for-the-badge&logo=firebase&logoColor=333333 "Firebase")](https://firebase.google.com/docs)
+[![Git](https://img.shields.io/badge/GIT-F05032?style=for-the-badge&logo=git&logoColor=ffffff "Git")](https://git-scm.com/)
 
