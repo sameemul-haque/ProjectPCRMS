@@ -9,10 +9,10 @@
         <form>
             <h1>ADMIN LOGIN</h1>
             <label for="username"><b>Username</b></label>
-            <input type="text" name="uname" placeholder="Enter Username" id="username">
+            <input type="email" id="email" name="email" placeholder="Enter Username" required>
             <label for="password"><b>Password</b></label>
-            <input type="password" name="pass" placeholder="Enter Password" id="password">
-            <p style="color: #ff0033; text-align: center"><?php echo $error; ?></p>
+            <input type="password" id="password" name="password"placeholder="Enter Password" required>
+            <p style="color: #ff0033; text-align: center"></p>
             <input type="submit" name="loginbutton" value="Login">
         </form>
     </div>
