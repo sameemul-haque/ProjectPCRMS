@@ -16,10 +16,7 @@ loginForm.addEventListener('submit', (event) => {
       // Clear the form and error message
       loginForm.reset();
       errorMsg.innerText = '';
-
-      // Redirect the user to the home page or dashboard
-      // Replace the URL with the URL of your home page or dashboard
-      window.location.href = 'home.html';
+      window.location.href = '/pcrms';
     })
     .catch((error) => {
       // Handle errors by displaying an error message to the user
