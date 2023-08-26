@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PCRMS - View Records</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <h1 style="text-transform: uppercase;">Police Crime Record Management System</h1>
+      <nav>
+        <a href="/pcrms" class="button"><i class="fa-solid fa-house"></i> Home</a>
+      </nav>
+    </header>
+
+    <main>
+      <div style="text-align: center;"><h2>View Records</h2></div>
+      <table>
+        <thead>
+          <tr>
+            <th>Criminal Name</th>
+            <th>Crime Category</th>
+            <th>Crime Date</th>
+            <th>Crime Time</th>
+            <th>Crime Location</th>
+            <th>Criminal Nationality</th>
+            <th>Crime Description</th>
+          </tr>
+        </thead>
+        <tbody id="record-list">
+        </tbody>
+      </table>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Police Crime Record Management System</p>
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-database.js"></script>
+
+    <!-- Import the Firestore library -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-firestore.js"></script>
+
+    <script src="/firebase-config.js"></script>
+    <script src="view-records.js"></script>
+  </body>
+</html>
