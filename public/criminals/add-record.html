@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="add-record.css" />
+    <title>PCRMS - Add Record</title>
+</head>
+
+<body>
+    <header>
+        <h1 style="text-transform: uppercase;">Police Crime Record Management System</h1>
+        <nav>
+            <a href="."><i class="fa-solid fa-house">View Records</i></a>
+        </nav>
+    </header>
+    <br>
+    <div style="align-items: flex-start;">
+        <form id="add-record-form" autocomplete="off">
+            <h2>Add Record</h2>
+
+            <div class="user-input-wrp">
+                <br />
+                <input type="text" class="inputText" id="criminalName" name="criminalName" required />
+                <span class="floating-label">Criminal Name</span>
+            </div>
+
+            <div class="user-input-wrp">
+                <br />
+                <input type="text" class="inputText" id="crimeCategory" name="crimeCategory" required />
+                <span class="floating-label">Crime Category</span>
+            </div>
+
+            <div class="user-input-wrp">
+                <br />
+                <input type="date" class="inputText" id="crimeDate" name="crimeDate" required />
+                <span class="floating-label">Crime Date</span>
+            </div>
+
+            <div class="user-input-wrp">
+                <br />
+                <input type="time" class="inputText" id="crimeTime" name="crimeTime" required />
+                <span class="floating-label">Crime Time</span>
+            </div>
+
+            <div class="user-input-wrp">
+                <br />
+                <input type="text" class="inputText" id="crimeLocation" name="crimeLocation" required />
+                <span class="floating-label">Crime Location</span>
+            </div>
+
+            <div class="user-input-wrp">
+                <br />
+                <input type="text" class="inputText" id="criminalNationality" name="criminalNationality" required />
+                <span class="floating-label">Criminal Nationality</span>
+            </div>
+
+            <div class="user-input-wrp">
+                <br />
+                <input type="text" class="inputText" id="crimeDescription" name="crimeDescription" required />
+                <span class="floating-label">Crime Description</span>
+            </div>
+            <div><input type="submit" value="Add Record" /></div>
+        </form>
+    </div>
+    <br>
+    <footer>
+        <p>&copy; 2023 PCRMS</p>
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-database.js"></script>
+
+    <!-- Import the Firestore library -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-firestore.js"></script>
+
+    <script src="/firebase-config.js"></script>
+    <script src="add-record.js"></script>
+</body>
+
+</html>
