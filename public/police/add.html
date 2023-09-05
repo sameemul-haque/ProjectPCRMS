@@ -8,63 +8,52 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
         integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" type="text/css" href="add-record.css" />
-    <title>PCRMS - Add Record</title>
+    <link rel="stylesheet" type="text/css" href="add.css" />
+    <title>PCRMS - Add Details</title>
 </head>
 
 <body>
     <header>
         <h1 style="text-transform: uppercase;">Police Crime Record Management System</h1>
         <nav>
-            <a href="." style="text-transform: uppercase;"><i class="fa-solid fa-house"></i>View Records</a>
+            <a href="." style="text-transform: uppercase;"><i class="fa-solid fa-house"></i>View Details</a>
         </nav>
     </header>
     <br>
     <div style="align-items: flex-start;">
         <form id="add-record-form" autocomplete="off">
-            <h2>Add Record</h2>
+            <h2>Add Details</h2>
 
             <div class="user-input-wrp">
                 <br />
-                <input type="text" class="inputText" id="criminalName" name="criminalName" required />
-                <span class="floating-label">Criminal Name</span>
+                <input type="number" class="inputText" id="policeID" name="policeID" required />
+                <span class="floating-label">Police ID</span>
             </div>
 
             <div class="user-input-wrp">
                 <br />
-                <input type="text" class="inputText" id="crimeCategory" name="crimeCategory" required />
-                <span class="floating-label">Crime Category</span>
+                <input type="text" class="inputText" id="policeName" name="policeName" required />
+                <span class="floating-label">Police Name</span>
             </div>
 
             <div class="user-input-wrp">
                 <br />
-                <input type="date" class="inputText" id="crimeDate" name="crimeDate" required />
-                <span class="floating-label">Crime Date</span>
+                <input type="text" class="inputText" id="policeStation" name="crimeDate" required />
+                <span class="floating-label">Police Station</span>
             </div>
 
             <div class="user-input-wrp">
                 <br />
-                <input type="time" class="inputText" id="crimeTime" name="crimeTime" required />
-                <span class="floating-label">Crime Time</span>
+                <input type="text" class="inputText" id="policeRank" name="policeRank" required />
+                <span class="floating-label">Rank</span>
             </div>
 
             <div class="user-input-wrp">
                 <br />
-                <input type="text" class="inputText" id="crimeLocation" name="crimeLocation" required />
-                <span class="floating-label">Crime Location</span>
+                <input type="tel" class="inputText" id="policeContact" name="policeContact" required />
+                <span class="floating-label">Contact No.</span>
             </div>
 
-            <div class="user-input-wrp">
-                <br />
-                <input type="text" class="inputText" id="criminalNationality" name="criminalNationality" required />
-                <span class="floating-label">Criminal Nationality</span>
-            </div>
-
-            <div class="user-input-wrp">
-                <br />
-                <input type="text" class="inputText" id="crimeDescription" name="crimeDescription" required />
-                <span class="floating-label">Crime Description</span>
-            </div>
             <div><input type="submit" value="Add Record" /></div>
         </form>
     </div>
@@ -80,7 +69,7 @@
     <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-firestore.js"></script>
 
     <script src="/firebase-config.js"></script>
-    <script src="add-record.js"></script>
+    <script src="add.js"></script>
 </body>
 
 </html>

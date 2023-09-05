@@ -1,4 +1,4 @@
-body{
+body {
   margin: 0;
   padding: 0;
   background-color: #3a3a3a;
@@ -7,7 +7,7 @@ body{
   font-family: sans-serif;
 }
 
-.loginbox{
+.loginbox {
   width: 320px;
   height: 400px;
   background: #fff;
@@ -15,12 +15,13 @@ body{
   top: 50%;
   left: 50%;
   position: absolute;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   box-sizing: border-box;
   padding: 70px 30px;
   border-radius: 20px;
 }
-.avatar{
+
+.avatar {
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -29,7 +30,7 @@ body{
   left: calc(50% - 50px);
 }
 
-h1{
+h1 {
   margin: 0;
   padding: 0 0 20px;
   text-align: center;
@@ -37,20 +38,20 @@ h1{
   line-height: 15px;
 }
 
-.loginbox p{
+.loginbox p {
   margin: 0;
   padding: 0;
   font-weight: bold;
   line-height: 25px;
 }
 
-.loginbox input{
+.loginbox input {
   width: 100%;
   margin-bottom: 20px;
 }
 
-.loginbox input[type="email"], input[type="password"]
-{
+.loginbox input[type="email"],
+input[type="password"] {
   border: none;
   border-bottom: 1px solid #000;
   background: transparent;
@@ -60,11 +61,11 @@ h1{
   font-size: 16px;
 }
 
-.loginbox input[type="submit"]
-{
+.btn {
   border: none;
   outline: none;
   height: 40px;
+  width: 100%;
   background: #000;
   color: #fff;
   font-size: 18px;
@@ -73,8 +74,24 @@ h1{
   transition: all 0.2s;
 }
 
-.loginbox input[type="submit"]:hover
-{
+.btn:hover {
+  cursor: pointer;
+  background: #3a3a3a;
+  color: #fff;
+}
+
+#githubbtn {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+  background: #000;
+  color: #fff;
+  border-radius: 15px;
+  transition: all 0.2s;
+}
+
+#githubbtn:hover {
   cursor: pointer;
   background: #3a3a3a;
   color: #fff;
