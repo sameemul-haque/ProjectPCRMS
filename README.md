@@ -1,6 +1,6 @@
-# projectpcrms
+# ProjectPCRMS
 
-• Police Crime Record Management System using Firebase
+• Police Crime Record Management System using JavaScript and Firebase
 
 • This is a mini version of <a href="https://github.com/sameemul-haque/PCRMS"> PCRMS </a>
 
