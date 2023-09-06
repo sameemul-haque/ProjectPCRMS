@@ -1,40 +1,36 @@
 // Get a reference to the database service
 const db = firebase.firestore();
 
-const addRecordForm = document.getElementById("add-record-form");
+const addDetailsForm = document.getElementById("add-details-form");
 
-addRecordForm.addEventListener("submit", (e) => {
+addDetailsForm.addEventListener("submit", (e) => {
   e.preventDefault();
 
   // Get input values
-  const criminalName = addRecordForm.criminalName.value;
-  const crimeCategory = addRecordForm.crimeCategory.value;
-  const crimeDate = addRecordForm.crimeDate.value;
-  const crimeTime = addRecordForm.crimeTime.value;
-  const crimeLocation = addRecordForm.crimeLocation.value;
-  const criminalNationality = addRecordForm.criminalNationality.value;
-  const crimeDescription = addRecordForm.crimeDescription.value;
+  const policeID = addDetailsForm.policeID.value;
+  const policeName = addDetailsForm.policeName.value;
+  const policeStation = addDetailsForm.policeStation.value;
+  const policeRank = addDetailsForm.policeRank.value;
+  const policeContact = addDetailsForm.policeContact.value;
 
   // Add record to Firestore database
-  db.collection("records")
+  db.collection("police")
     .add({
-      criminalName: criminalName,
-      crimeCategory: crimeCategory,
-      crimeDate: crimeDate,
-      crimeTime: crimeTime,
-      crimeLocation: crimeLocation,
-      criminalNationality: criminalNationality,
-      crimeDescription: crimeDescription,
+      policeID: policeID,
+      policeName: policeName,
+      policeStation: policeStation,
+      policeRank: policeRank,
+      policeContact: policeContact,
     })
     .then((docRef) => {
-      console.log("Record added with ID: ", docRef.id);
+      console.log("Details added with ID: ", docRef.id);
       // Reset form
-      addRecordForm.reset();
-      alert("Record added successfully!");
-      window.location.href = "/criminals";
+      addDetailsForm.reset();
+      alert("Details added successfully!");
+      window.location.href = "/police";
     })
     .catch((error) => {
-      console.error("Error adding record: ", error);
-      alert("Error adding record, please try again.");
+      console.error("Error adding details: ", error);
+      alert("Error adding details, please try again.");
     });
 });
