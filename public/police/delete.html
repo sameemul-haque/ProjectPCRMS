@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PCRMS - Delete Police Details</title>
+    <!-- Include necessary CSS and JavaScript files -->
+    <link rel="stylesheet" type="text/css" href="/css/delete.css" />
+</head>
+
+<body>
+    <header>
+        <h1 style="text-transform: uppercase;">POLICE INFORMATION</h1>
+        <nav>
+            <a href="index.html" class="button">View <i class="fa-solid fa-eye"></i></a>
+        </nav>
+    </header>
+
+    <main>
+        <div style="text-align: center;">
+            <h2>Delete Police Details</h2>
+        </div>
+        <form id="delete-form" autocomplete="off">
+            <label for="policeID">Police ID to Delete:</label>
+            <input type="number" id="policeID" name="policeID" required />
+            <button type="submit">Delete</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Police Crime Record Management System</p>
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-database.js"></script>
+
+    <!-- Import the Firestore library -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-firestore.js"></script>
+
+    <script src="/firebase-config.js"></script>
+    <script src="delete.js"></script>
+</body>
+
+</html>

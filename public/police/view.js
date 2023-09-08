@@ -1,4 +1,3 @@
-// Get a reference to the database service
 const db = firebase.firestore();
 
 const detailsList = document.getElementById("details-list");
