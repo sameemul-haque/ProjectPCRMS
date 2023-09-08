@@ -8,6 +8,18 @@
 
 • <a href="https://projectpcrms.web.app">projectpcrms.web.app</a>
 
+---
+### Login Credentials
+- Email
+```
+adminpcrmsweb@gmail.com
+```
+- Password
+```
+adm123
+```
+---
+
 
 ## Languages and Tools used:
 [![JavaScript](https://img.shields.io/badge/JAVASCRIPT-F7DF1E?style=for-the-badge&logo=javascript&logoColor=333333 "JavaScript")](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
