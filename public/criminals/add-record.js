@@ -7,23 +7,23 @@ addRecordForm.addEventListener("submit", (e) => {
   e.preventDefault();
 
   // Get input values
+  const criminalID = addRecordForm.criminalID.value;
   const criminalName = addRecordForm.criminalName.value;
   const crimeCategory = addRecordForm.crimeCategory.value;
   const crimeDate = addRecordForm.crimeDate.value;
   const crimeTime = addRecordForm.crimeTime.value;
   const crimeLocation = addRecordForm.crimeLocation.value;
-  const criminalNationality = addRecordForm.criminalNationality.value;
   const crimeDescription = addRecordForm.crimeDescription.value;
 
   // Add record to Firestore database
   db.collection("records")
     .add({
+      criminalID: criminalID,
       criminalName: criminalName,
       crimeCategory: crimeCategory,
       crimeDate: crimeDate,
       crimeTime: crimeTime,
       crimeLocation: crimeLocation,
-      criminalNationality: criminalNationality,
       crimeDescription: crimeDescription,
     })
     .then((docRef) => {
