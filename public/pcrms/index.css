@@ -40,7 +40,7 @@ main {
   align-items: center;
   text-align: center;
   justify-content: center;
-  height: calc(100vh - 140px);
+  /* height: calc(100vh - 140px); */
 }
 
 .btn {
