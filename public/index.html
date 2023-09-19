@@ -1,31 +1,74 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>PCRMS Login</title>
-    <link rel="stylesheet" type="text/css" href="login.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+    <link rel="stylesheet" type="text/css" href="login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-<body>
+  <body>
     <div class="loginbox">
-        <form>
-            <h1>ADMIN LOGIN</h1>
-            <label for="username"><b>Email</b></label>
-            <input type="email" id="email" name="email" placeholder="Enter email" required>
-            <label for="password"><b>Password</b></label>
-            <input type="password" id="password" name="password" placeholder="Enter Password" required>
-            <p style="color: #ff0033; text-align: center"></p>
-            <input type="submit" name="loginbutton" class="btn" value="Login">
-        </form>
-        <a id="githubbtn" href="https://github.com/sameemul-haque/projectpcrms"><i class="fa-brands fa-github"></i>
-            Github</a>
+      <form>
+        <h1>ADMIN LOGIN</h1>
+        <label for="username"><b>Email</b></label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter email"
+          required
+        />
+        <label for="password"><b>Password</b></label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Enter Password"
+          required
+        />
+        <p style="color: #ff0033; text-align: center"></p>
+        <input type="submit" name="loginbutton" class="btn" value="Login" />
+      </form>
+      <div id="social-div">
+        <a
+          id="social-btn"
+          style="margin-right: 5px"
+          href="https://github.com/sameemul-haque/projectpcrms"
+        >
+          <i class="fa-brands fa-github"></i>
+          Github
+        </a>
+        <a
+          id="social-btn"
+          style="margin-left: 5px"
+          href="https://sameemul-haque.vercel.app"
+        >
+          <i class="fa-solid fa-globe"></i>
+          Portfolio
+        </a>
+      </div>
     </div>
-    <div style="display: flex;justify-content: center;">
-        <p style="font-size: x-large;   text-shadow:-2px -2px 0 #000,2px -2px 0 #000,-2px 2px 0 #000,2px 2px 0 #000; font-weight: bolder; padding:15px; display: inline;color: #ff0033; text-align: center"
-            class="error-msg" id="error-msg"></p>
+    <div style="display: flex; justify-content: center">
+      <p
+        style="
+          font-size: x-large;
+          text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000,
+            2px 2px 0 #000;
+          font-weight: bolder;
+          padding: 15px;
+          display: inline;
+          color: #ff0033;
+          text-align: center;
+        "
+        class="error-msg"
+        id="error-msg"
+      ></p>
     </div>
     <!-- Firebase SDK -->
     <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
@@ -36,6 +79,5 @@
 
     <!-- Login script -->
     <script src="login.js"></script>
-</body>
-
+  </body>
 </html>
