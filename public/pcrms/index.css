@@ -70,6 +70,7 @@ main {
 footer {
   background-color: #0050a5;
   color: white;
+  text-align: center;
   padding: 5px;
   position: fixed;
   bottom: 0;
