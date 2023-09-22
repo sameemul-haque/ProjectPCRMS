@@ -1,36 +1,30 @@
-// Get a reference to the database service
 const db = firebase.firestore();
 
-const recordList = document.getElementById("record-list");
+const detailsList = document.getElementById("details-list");
 
-// Create a function to render records
-function renderRecord(doc) {
-  let tr = document.createElement("tr");
-  let criminalIDTd = document.createElement("td");
-  let criminalNameTd = document.createElement("td");
-  let crimeCategoryTd = document.createElement("td");
-  let crimeDateTd = document.createElement("td");
-  let crimeTimeTd = document.createElement("td");
-  let crimeLocationTd = document.createElement("td");
-  let crimeDescriptionTd = document.createElement("td");
+function renderCard(doc) {
+  const card = document.createElement("div");
+  card.classList.add("card");
 
-  criminalIDTd.textContent = doc.data().criminalID;
-  criminalNameTd.textContent = doc.data().criminalName;
-  crimeCategoryTd.textContent = doc.data().crimeCategory;
-  crimeDateTd.textContent = doc.data().crimeDate;
-  crimeTimeTd.textContent = doc.data().crimeTime;
-  crimeLocationTd.textContent = doc.data().crimeLocation;
-  crimeDescriptionTd.textContent = doc.data().crimeDescription;
+  const criminalID =  doc.data().criminalID;
+  const criminalName = doc.data().criminalName;
+  const crimeCategory =  doc.data().crimeCategory;
+  const crimeDate =doc.data().crimeDate;
+  const crimeTime =doc.data().crimeTime;
+  const crimeLocation =  doc.data().crimeLocation;
+  const crimeDescription =  doc.data().crimeDescription;
 
-  tr.appendChild(criminalIDTd);
-  tr.appendChild(criminalNameTd);
-  tr.appendChild(crimeCategoryTd);
-  tr.appendChild(crimeDateTd);
-  tr.appendChild(crimeTimeTd);
-  tr.appendChild(crimeLocationTd);
-  tr.appendChild(crimeDescriptionTd);
+  card.innerHTML = `
+    <p><b>Criminal ID:</b> ${criminalID}</p>
+    <p><b>Criminal Name:</b> ${criminalName}</p>
+    <p><b>Crime Committed:</b> ${crimeCategory}</p>
+    <p><b>Date:</b> ${crimeDate}</p>
+    <p><b>Time:</b> ${crimeTime}</p>
+    <p><b>Location:</b> ${crimeLocation}</p>
+    <p><b>Description:</b> ${crimeDescription}</p>
+  `;
 
-  recordList.appendChild(tr);
+  detailsList.appendChild(card);
 }
 
 // Get records from Firestore database
@@ -38,8 +32,7 @@ db.collection("records")
   .get()
   .then((querySnapshot) => {
     querySnapshot.forEach((doc) => {
-      // Render each record
-      renderRecord(doc);
+      renderCard(doc);
     });
   })
   .catch((error) => {
