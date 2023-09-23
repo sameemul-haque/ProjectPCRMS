@@ -10,7 +10,6 @@ body {
     margin: 15px;
 }
 
-/* Style the header for delete page */
 header {
     background-color: #0050a5;
     color: white;
@@ -42,7 +41,6 @@ nav a:focus {
     transition: all 0.2s;
 }
 
-/* Style the main section for delete page */
 main {
     text-align: center;
     margin-top: 30px;
@@ -128,7 +126,6 @@ footer {
     padding: 10px;
 }
 
-/* Additional styles for input field */
 label {
     color: #fff;
     font-size: 18px;
@@ -136,7 +133,6 @@ label {
     margin-top: 10px;
 }
 
-/* Media query for smaller screens */
 @media only screen and (max-width: 600px) {
     nav a {
         font-size: 14px;

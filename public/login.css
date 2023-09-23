@@ -8,8 +8,7 @@ body {
 }
 
 .loginbox {
-  width: 320px;
-  height: 430px;
+  width: 20rem;
   background: #fff;
   color: #000;
   top: 50%;
@@ -83,6 +82,7 @@ input[type="password"] {
   padding: 10px;
   background: #000;
   color: #fff;
+  margin-bottom: 25px;
   border-radius: 15px;
   transition: all 0.2s;
 }
