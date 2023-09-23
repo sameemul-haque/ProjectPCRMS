@@ -1,55 +1,11 @@
-body {
-  background-color: #15202B;
-  font-family: Arial, sans-serif;
-}
-
-header {
-  background-color: #0050a5;
-  color: white;
-  padding: 20px;
-  display: flex;
-  align-items: center;
-}
-
 main {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
+  margin-bottom: 2.5rem;
 }
-
-/* h2 {
-  color: #0050a5;
-} */
 
 div {
   padding: 10px;
-}
-
-nav {
-  display: flex;
-  flex-direction: row;
-  position: absolute;
-  right: 0;
-  padding: 20px;
-}
-
-nav a {
-  color: white;
-  background-color: #1DA1F2;
-  text-decoration: none;
-  font-size: 18px;
-  border-style: solid;
-  border-radius: 10px;
-  padding: 5px;
-  margin: 5px;
-}
-
-nav a:is(:hover, :focus) {
-  cursor: pointer;
-  color: black;
-  font-size: 20px;
-  background-color: #144e7270;
-  transition: all 0.2s;
 }
 
 .card-container {
@@ -64,7 +20,7 @@ nav a:is(:hover, :focus) {
   padding: 10px;
   background-color: #ced4da;
   border-radius: 0.4em;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   transition: background-color 0.3s, transform 0.2s;
 }
 
@@ -73,17 +29,7 @@ nav a:is(:hover, :focus) {
 }
 
 .card:hover {
-  background-color: rgba(0, 75, 150, 0.6);
-  color: #fff;
+  background-color: #161640;
+  color: #ffffff;
   transform: scale(1.05);
-}
-
-footer {
-  background-color: #0050a5;
-  color: white;
-  text-align: center;
-  padding: 5px;
-  position: fixed;
-  bottom: 0;
-  width: 98%;
 }
