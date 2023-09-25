@@ -89,3 +89,33 @@ input[type="password"] {
   background: #3a3a3a;
   color: #ffffff;
 }
+/* #help-message{
+  color: #3a3a3a;
+  position: absolute;
+  font-weight: bolder;
+  bottom: 0%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  transition: all 0.2s;
+}
+#help-message:hover{
+  color: #ffffff;
+} */
+#github-issues{
+  position: absolute;
+  font-weight: bolder;
+  text-decoration: none;
+  bottom: 0%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+#github-issues a{
+  color: #3a3a3a;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+#github-issues a:hover{
+  color: #1212cc;
+}
