@@ -103,13 +103,14 @@ input[type="password"] {
   color: #ffffff;
 } */
 #github-issues{
-  position: absolute;
+  position: fixed;
   font-weight: bolder;
   text-decoration: none;
   bottom: 0%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  z-index: -1;
 }
 #github-issues a{
   color: #3a3a3a;
